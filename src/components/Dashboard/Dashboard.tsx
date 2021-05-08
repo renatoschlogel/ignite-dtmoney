@@ -1,5 +1,5 @@
-import { Sumnary } from "../Sumnary/sumnary";
-import { TransactionTable } from "../TransactionTable/transactionTable";
+import { Sumnary } from "../Sumnary/Sumnary";
+import { TransactionTable } from "../TransactionsTable/TransactionsTable";
 import { Container } from "./dashboard.styles";
 
 export function Dashboard(){

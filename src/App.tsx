@@ -1,7 +1,5 @@
-
-import React from "react";
-import { Dashboard } from "./components/Dashboard/dashboard";
-import { Header } from "./components/Header/header";
+import { Dashboard } from "./components/Dashboard/Dashboard";
+import { Header } from "./components/Header/Header";
 import { GlobalStyle } from "./styles/global";
 
 
