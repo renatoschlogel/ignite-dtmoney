@@ -63,6 +63,12 @@ export const TransactionTypeContainer = styled.form`
 
 interface RadioBoxProps {
   isActive: boolean;
+  activeColor: 'green' | 'red';
+}
+
+const colors = {
+  green: '#33CC95',
+  red: '#E52E4D'
 }
 
 export const RadioBox = styled.button<RadioBoxProps>`
@@ -70,7 +76,9 @@ export const RadioBox = styled.button<RadioBoxProps>`
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
 
-    background: ${(props) => props.isActive ? '#ccc' : 'transparent'};
+    background: ${(props) => props.isActive
+      ? colors[props.activeColor] 
+      : 'transparent'};
 
     display: flex;
     align-items: center;
