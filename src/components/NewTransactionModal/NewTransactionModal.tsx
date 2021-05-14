@@ -36,7 +36,7 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
           <RadioBox 
             type="button"
             onClick={() => setType('deposit')}
-            isActive={type == 'deposit'}
+            isActive={type === 'deposit'}
             activeColor="green"
           >
             <img src={incomeImg} alt="Entrada"/>
@@ -46,7 +46,7 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
           <RadioBox 
             type="button"
             onClick={() => setType('withdraw')}
-            isActive={type == 'withdraw'}
+            isActive={type === 'withdraw'}
             activeColor="red"
           >
             <img src={outcomeImg} alt="Saída"/>
